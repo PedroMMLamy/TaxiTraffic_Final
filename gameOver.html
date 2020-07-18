@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: azure;"> GAME OVER </h1>
+<p id="score"></p>
+
+    <script >
+        const scoreElement = document.getElementById("score")
+        const scoreValue = localStorage.getItem("score")
+        scoreElement.innerHTML = `Your score is: ${scoreValue}`
+        document.getElementById("score").style.color = "white"
+    </script>
+</body>
+</html>
